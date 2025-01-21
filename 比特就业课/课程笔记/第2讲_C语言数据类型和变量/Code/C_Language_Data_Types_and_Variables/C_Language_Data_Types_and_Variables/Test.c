@@ -1,14 +1,15 @@
-#include <stdio.h>
-#include <stdbool.h>
+#define _CRT_SECURE_NO_WARNINGS 1
 
-int m = 1000;
+#include <stdio.h>
 
 int main()
 {
-	int a = -10;
-	printf("%d\n", -10);	// -10
-	printf("%d\n", -a);		// 10
-	printf("%d\n", 10);		// 10
+	int a = 0;
+	int b = 0;
+	float f = 0.0f;
+	int r = scanf("%d %d %f", &a, &b, &f);
+	printf("a=%d b=%d f=%f\n", a, b, f);
+	printf("r = %d\n", r);
 
 	return 0;
 }
